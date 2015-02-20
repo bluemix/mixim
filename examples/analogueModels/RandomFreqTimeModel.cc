@@ -26,8 +26,8 @@ void RandomFreqTimeModel::filterSignal(airframe_ptr_t frame, const Coord& /*send
 
 	/* At first get a new instance of the default Mapping implementation
 	 * which is able to represent our attenuation mapping.
-	 * the first parameter of "createMapping" gets the DimensionSet the
-	 * Mapping should use as domain and the second parameter sets the
+	 * The first parameter of "createMapping" gets the DimensionSet the
+	 * Mapping should use as domain, and the second parameter sets the
 	 * interpolation method to be used to calculate the values between
 	 * two Mapping entries.
 	 *
@@ -37,7 +37,7 @@ void RandomFreqTimeModel::filterSignal(airframe_ptr_t frame, const Coord& /*send
 	 * interpolation in every dimension. Later it might be possible
 	 * to define different interpolation methods for different
 	 * dimensions. For example: While linear interpolation of time
-	 * makes sence in this case, using NEAREST for frequency  whould make
+	 * makes sense in this case, using NEAREST for frequency  would make
 	 * more sense.
 	 */
 	Mapping* attMapping = MappingUtils::createMapping(dimensions, Mapping::LINEAR);
