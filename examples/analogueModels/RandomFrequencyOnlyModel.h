@@ -36,7 +36,7 @@ public:
 	/**
 	 * @brief Initializes the analogue model.
 	 *
-	 * The only thing we have to do in the constructor and which whould
+	 * The only thing we have to do in the constructor and which would
 	 * probably have to be done for every other AnalogueModel is
 	 * setting the the DimensionSet this AnalogueModel will work with.
 	 *
@@ -47,7 +47,7 @@ public:
 	 *
 	 * Note: Using "Dimension("time")" instead of "Dimension::time()" would
 	 * work also, but using "Dimension::time()" saves us a string comparison
-	 * and should therefore be prefered instead of using "Dimension("time")".
+	 * and should therefore be preferred instead of using "Dimension("time")".
 	 */
 	RandomFrequencyOnlyModel(int seed = 23):
 		frequency("frequency"),
