@@ -37,7 +37,7 @@ void RandomFrequencyOnlyModel::filterSignal(airframe_ptr_t frame, const Coord& /
 	 * interpolation in every dimension. Later it might be possible
 	 * to define different interpolation methods for different
 	 * dimensions. For example: While linear interpolation of time
-	 * makes sence in most cases, using NEAREST whould make more sense
+	 * makes sence in most cases, using NEAREST would make more sense
 	 * for frequency.
 	 */
 	Mapping* attMapping = MappingUtils::createMapping(Argument::MappedOne, dimensions, Mapping::LINEAR);
