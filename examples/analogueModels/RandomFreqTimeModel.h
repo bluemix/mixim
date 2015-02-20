@@ -10,8 +10,8 @@
  * @brief Sample implementation of an AnalogueModel which uses
  * MultiDimMapping as AttenuationMapping.
  *
- * This class is a sample which shows how to use the default Mapping implementation
- * to implement a signal attenuation over more dimensions then just the
+ * This class is a sample, which shows how to use the default Mapping implementation
+ * to implement a signal attenuation over more dimensions than just the
  * time.
  *
  * @ingroup analogueModels
@@ -32,9 +32,9 @@ public:
 	/**
 	 * @brief Initializes the analogue model.
 	 *
-	 * The only thing we have to do in the constructor and which whould
+	 * The only thing we have to do in the constructor and which would
 	 * probably have to be done for every other AnalogueModel is
-	 * setting the the DimensionSet this AnalogueModel will work with.
+	 * setting the DimensionSet this AnalogueModel will work with.
 	 *
 	 * In this case we want to work on "time" and "frequency".
 	 * The DimensionSet provides constructors for up to three initial
