@@ -52,7 +52,7 @@ protected:
 	}
 
 	/**
-	 * @brief handles the Signal when passed after after end of the header.
+	 * @brief handles the Signal when passed after end of the header.
 	 */
 	simtime_t handleHeaderOver(std::map<Signal*, int>::iterator& it){
 		log("Second receive of a signal from Phy - Deciding if packet should be received - Let's try to receive it.");
@@ -129,8 +129,8 @@ protected:
 
 		bool toWeak = false;
 
-		//iterate over receiving power mapping and chekc if every value is bigger
-		//then the threshold
+		//iterate over receiving power mapping and check if every value is bigger
+		//than the threshold
 		ConstMappingIterator* mIt = receivingPower->createConstIterator();
 
 		while(mIt->inRange()){
@@ -151,7 +151,7 @@ protected:
 		delete receivingPower;
 
 		if(toWeak){
-			log("...signal is to weak -> discard.");
+			log("...signal is too weak -> discard.");
 		} else {
 			log("...strong enough -> forwarding it to Mac layer.");
 			phy->sendUp(frame, new DeciderResult(true));
