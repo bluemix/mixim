@@ -45,7 +45,7 @@ void LMacLayer::initialize(int stage)
 
         droppedPacket.setReason(DroppedPacket::NONE);
         nicId = getNic()->getId();
-        debugEV << "My Mac address is" << myMacAddr << " and my Id is " << myId << endl;
+        debugEV << "My Mac address is " << myMacAddr << " and my Id is " << myId << endl;
 
         macState = INIT;
 
